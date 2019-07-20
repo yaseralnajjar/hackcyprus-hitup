@@ -2,6 +2,7 @@
   <div>
     <header-component />
     <user-card />
+    <bottom-nav/>
   </div>
 </template>
 
