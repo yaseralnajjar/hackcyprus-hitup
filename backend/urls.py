@@ -9,9 +9,11 @@ from django.urls import path, include
 from rest_framework import routers
 
 from .api.views import index_view, ReviewViewSet
+from .api.views import index_view, ProfileViewSet
 
 router = routers.DefaultRouter()
 router.register('reviews', ReviewViewSet)
+router.register('profiles', ProfileViewSet)
 
 urlpatterns = [
 
@@ -24,5 +26,3 @@ urlpatterns = [
     # http://localhost:8000/api/admin/
     path('api/admin/', admin.site.urls),
 ]
-
-
