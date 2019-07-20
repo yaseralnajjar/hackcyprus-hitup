@@ -2,12 +2,13 @@ from django.db import models
 from rest_framework import serializers
 
 
-class Message(models.Model):
-    subject = models.CharField(max_length=200)
-    body = models.TextField()
+class Review(models.Model):
+    #reviewer = models.ForeignKey(User, related_name='reviews', on_delete=django_models.CASCADE)
+    #reviewee = models.ForeignKey(User, related_name='reviews', on_delete=django_models.CASCADE)
+    details = models.CharField(max_length=500)
 
 
-class MessageSerializer(serializers.HyperlinkedModelSerializer):
+class ReviewSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
-        model = Message
-        fields = ('url', 'subject', 'body', 'pk')
+        model = Review
+        fields = '__all__'
