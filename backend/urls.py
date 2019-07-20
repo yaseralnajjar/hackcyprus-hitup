@@ -10,16 +10,16 @@ from django.urls import path, include
 
 from rest_framework import routers
 
-from .api.views import index_view, ReviewViewSet, ResendConfirmView
+from .api import views
 
 router = routers.DefaultRouter()
-router.register('reviews', ReviewViewSet)
-router.register('profiles', ProfileViewSet)
+router.register('reviews', views.ReviewViewSet)
+router.register('profiles', views.ProfileViewSet)
 
 urlpatterns = [
 
     # http://localhost:8000/
-    path('', index_view, name='index'),
+    path('', views.index_view, name='index'),
 
     # http://localhost:8000/api/<router-viewsets>
     path('api/', include(router.urls)),
@@ -27,7 +27,7 @@ urlpatterns = [
     path('api/auth/', include('rest_auth.urls')),
     path('password-reset/<uidb64>/<token>/', PasswordResetConfirmView, name='password_reset_confirm'),
     path('api/auth/registration/', include('rest_auth.registration.urls')),
-    path('api/auth/resend-confirmation/', ResendConfirmView.as_view(), name='resend_confirm_view'),
+    path('api/auth/resend-confirmation/', views.ResendConfirmView.as_view(), name='resend_confirm_view'),
 
     # http://localhost:8000/api/admin/
     path('api/admin/', admin.site.urls),

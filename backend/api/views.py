@@ -29,9 +29,10 @@ class ReviewViewSet(viewsets.ModelViewSet):
     queryset = models.Review.objects.all()
     serializer_class = serializers.ReviewSerializer
 
+
 class ProfileViewSet(viewsets.ModelViewSet):
     """
     API endpoint that allows messages to be viewed or edited.
     """
-    queryset = Profile.objects.all()
-    serializer_class = ProfileSerializer
+    queryset = models.Profile.objects.all()
+    serializer_class = serializers.ProfileSerializer

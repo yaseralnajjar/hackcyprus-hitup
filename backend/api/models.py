@@ -35,11 +35,3 @@ class Profile(models.Model):
     martial = models.CharField(max_length=2, choices=STATUS_CHOICE, default= SINGLE)
     bio = models.CharField(max_length=200)
     user = models.IntegerField(default = 0)
-
-
-
-
-class ProfileSerializer(serializers.HyperlinkedModelSerializer):
-    class Meta:
-        model = Profile
-        fields = '__all__'

@@ -7,7 +7,7 @@ from allauth.account.utils import send_email_confirmation, user_pk_to_url_str, s
 from allauth.account import app_settings as allauth_settings
 from allauth.utils import email_address_exists
 
-from .models import Review
+from .models import Review, Profile
 
 
 class UserSerializer(serializers.ModelSerializer):
@@ -147,4 +147,10 @@ class ResendConfirmSerializer(serializers.Serializer):
 class ReviewSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Review
+        fields = '__all__'
+
+
+class ProfileSerializer(serializers.HyperlinkedModelSerializer):
+    class Meta:
+        model = Profile
         fields = '__all__'
