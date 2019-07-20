@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import HelloComponent from './components/HelloComponent/HelloComponent.vue'
+import HitupList from './components/HitupList/HitupList.vue'
 Vue.use(Router)
 
 export default new Router({
@@ -9,6 +10,11 @@ export default new Router({
       path: '/',
       name: 'hello',
       component: HelloComponent
+    },
+    {
+      path: '/search',
+      name: 'HitupList',
+      component: HitupList
     }
   ]
 })

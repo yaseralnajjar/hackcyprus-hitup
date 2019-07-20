@@ -1,5 +1,3 @@
 export default {
-  name: 'HelloComponent',
-  props: {
-  }
+  name: 'HelloComponent'
 }
