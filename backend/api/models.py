@@ -1,10 +1,10 @@
+from django.contrib.auth.models import User
 from django.db import models
-from rest_framework import serializers
 
 
 class Review(models.Model):
-    #reviewer = models.ForeignKey(User, related_name='reviews', on_delete=django_models.CASCADE)
-    #reviewee = models.ForeignKey(User, related_name='reviews', on_delete=django_models.CASCADE)
+    reviewer = models.ForeignKey(User, related_name='reviewers', on_delete=models.CASCADE)
+    reviewee = models.ForeignKey(User, related_name='reviewees', on_delete=models.CASCADE)
     details = models.CharField(max_length=500)
 
 
@@ -38,10 +38,6 @@ class Profile(models.Model):
 
 
 
-class ReviewSerializer(serializers.HyperlinkedModelSerializer):
-    class Meta:
-        model = Review
-        fields = '__all__'
 
 class ProfileSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:

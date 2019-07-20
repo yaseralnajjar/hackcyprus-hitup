@@ -36,9 +36,20 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'whitenoise.runserver_nostatic',  # < Per Whitenoise, to disable built in
+    'django.contrib.sites',
     'django.contrib.staticfiles',
+
+    'whitenoise.runserver_nostatic',  # < Per Whitenoise, to disable built in
+
+    'rest_framework.authtoken',
     'rest_framework',
+    'rest_auth.registration',
+    'corsheaders',
+
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
+
     'backend.api',
 ]
 
@@ -137,3 +148,5 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 # Insert Whitenoise Middleware at top but below Security Middleware
 # MIDDLEWARE.insert(1, 'whitenoise.middleware.WhiteNoiseMiddleware',)
 # http://whitenoise.evans.io/en/stable/django.html#make-sure-staticfiles-is-configured-correctly
+
+SITE_ID = 1
