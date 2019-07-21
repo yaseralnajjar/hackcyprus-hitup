@@ -3,11 +3,14 @@
   <header-component />
   <template>
     <v-flex xs12>
+      <div class="request">New Hitup Request from</div>
+    </v-flex>
+    <v-flex xs12>
       <v-card class="white--text">
       <v-layout row class="centerlize"> 
           <v-flex xs12>
             <div class="centerize">
-              <v-img src='https://cdn.vuetifyjs.com/images/lists/1.jpg' height="125px" class="lolRadio"></v-img>
+              <v-img src='https://cdn.vuetifyjs.com/images/lists/2.jpg' height="125px" class="lolRadio"></v-img>
             </div>
           </v-flex>
           </v-layout>
@@ -15,10 +18,10 @@
             <v-card-title primary-title>
                   <v-layout row class="centerText">
               <div>
-                <h2 class="headline">Mohammed Alhakem</h2>
+                <h2 class="headline">Anas Nablusi</h2>
                 <h3>Admired by:<span style="font-weight: bold; margin: 0 0px 0 6px !important">28</span> people</h3>
              <div class="text-lg-center" style="margin: 15px 0;">
-              <v-btn round color="primary" dark large @click="hitUp">Hit me up 🖐️</v-btn>
+              <v-btn round color="primary" dark large to="/accepted">Accept Request</v-btn>
             </div>
               </div>
                     </v-layout>
@@ -30,13 +33,13 @@
 
         <div class="emojes-bar">
           <div>
-            ❤️ <span>22</span>
+            ❤️ <span>36</span>
           </div>
           <div>
-            😆 <span>15</span>
+            😆 <span>52</span>
           </div>
           <div>
-            🦄 <span>15</span>
+            🦄 <span>18</span>
           </div>
         </div>
                 <v-divider light></v-divider>
@@ -60,6 +63,6 @@
 </div>
 </template>
 
-<script src="./UserProfile.js"></script>
+<script src="./requestProfile.js"></script>
 
-<style src="./UserProfile.scss" lang="scss" scoped></style>
+<style src="./requestProfile.scss" lang="scss" scoped></style>

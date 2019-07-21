@@ -6,6 +6,7 @@ import UserProfile from './components/UserProfile/UserProfile.vue'
 import MainComponent from './components/MainComponent/MainComponent.vue'
 import WaitingComponent from './components/WaitingComponent/WaitingComponent.vue'
 import AcceptComponent from './components/AcceptComponent/AcceptComponent.vue'
+import requestProfile from './components/requestProfile/requestProfile.vue'
 
 Vue.use(Router)
 
@@ -41,6 +42,12 @@ export default new Router({
       path: '/accepted',
       name: 'AcceptComponent',
       component: AcceptComponent
+    },
+    {
+      path: '/request',
+      name: 'requestProfile',
+      component: requestProfile
     }
+    
   ]
 })
