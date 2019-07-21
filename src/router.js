@@ -25,16 +25,16 @@ export default new Router({
       path: '/wating',
       name: 'hello',
       component: WaitingComponent
-    }
+    },
     // {
     //   path: '/search',
     //   name: 'HitupList',
     //   component: HitupList
     // },
-    // {
-    //   path: '/profile',
-    //   name: 'ProfileComponent',
-    //   component: ProfileComponent
-    // }
+    {
+      path: '/profile',
+      name: 'UserProfile',
+      component: UserProfile
+    }
   ]
 })

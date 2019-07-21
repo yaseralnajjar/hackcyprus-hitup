@@ -46,7 +46,7 @@ export default {
   },
   methods: {
     toProfile(){
-      this.$store.state.view = 'ProfileComponent'
+      this.$store.state.view = 'UserProfile'
    }
   }
 }

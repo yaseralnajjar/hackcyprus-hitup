@@ -19,9 +19,26 @@
 
 .bio{  
   padding: 15px !important;
-  margin-top: -25px;
+  
 }
 
 p, h1, h2, h3, i{
   color: black !important;
+}
+
+.emojes-bar{
+  display: flex;
+  justify-content: space-around;
+  padding: 5px 0 10px;
+  font-size: 17px;
+  margin-bottom: 15px;
+  span{
+    display: inline-block;
+    background: #f5f5f5;
+    border-radius: 50px;
+    font-weight: bold;
+    padding: 4px 12px;
+    font-size: 15px;
+    color: #4c4c4c;
+  }
 }
