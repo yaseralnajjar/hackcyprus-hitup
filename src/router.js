@@ -20,15 +20,15 @@ export default new Router({
       name: 'hello',
       component: HelloComponent
     },
-    // {
-    //   path: '/search',
-    //   name: 'HitupList',
-    //   component: HitupList
-    // },
-    // {
-    //   path: '/profile',
-    //   name: 'ProfileComponent',
-    //   component: ProfileComponent
-    // }
+    {
+      path: '/search',
+      name: 'HitupList',
+      component: HitupList
+    },
+    {
+      path: '/profile',
+      name: 'UserProfile',
+      component: UserProfile
+    }
   ]
 })
