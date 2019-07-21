@@ -30,13 +30,13 @@
 
         <div class="emojes-bar">
           <div>
-            ❤️ <span>22</span>
+            ❤️ <span>6</span>
           </div>
           <div>
-            😆 <span>15</span>
+            😆 <span>10</span>
           </div>
           <div>
-            🦄 <span>15</span>
+            🦄 <span>100</span>
           </div>
         </div>
                 <v-divider light></v-divider>

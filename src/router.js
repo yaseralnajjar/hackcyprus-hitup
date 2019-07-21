@@ -7,6 +7,8 @@ import MainComponent from './components/MainComponent/MainComponent.vue'
 import WaitingComponent from './components/WaitingComponent/WaitingComponent.vue'
 import AcceptComponent from './components/AcceptComponent/AcceptComponent.vue'
 import requestProfile from './components/requestProfile/requestProfile.vue'
+import ReviewComponent from './components/ReviewComponent/ReviewComponent.vue'
+import AddReview from './components/AddReview/AddReview.vue'
 
 Vue.use(Router)
 
@@ -47,7 +49,16 @@ export default new Router({
       path: '/request',
       name: 'requestProfile',
       component: requestProfile
-    }
-    
+    },
+    {
+      path: '/review',
+      name: 'ReviewComponent',
+      component: ReviewComponent
+    },
+    {
+      path: '/addreview',
+      name: 'AddReview',
+      component: AddReview
+    }    
   ]
 })

@@ -1,0 +1,58 @@
+@import '../../assets/styles/vars';
+
+body{
+}
+
+.hello-logo{
+  width: 300px;
+  height: 100px;
+  margin-bottom: 20px;
+  font-size: 100px;
+  line-height: 100px;
+  margin-top: 240px;
+}
+.heading{
+  margin-top: 150px !important;
+}
+a{
+  text-decoration: none;
+}
+.reactions{
+  font-size: 65px;
+  display: flex;
+  margin-top: 30px;
+  div:first-of-type{
+    margin-left: 20px;
+  }
+}
+.container{
+  background: #fff !important;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 0;
+}
+.v-btn{
+  background: $cancel-gradiant !important;
+  width: 80%;
+  position: relative;
+  bottom: -100px !important;
+  height: 50px;
+ 
+  font-size: 18px;
+  @media(min-width: 600px) {
+    width: 250px;
+  }
+}
+.back-icon{
+  position: absolute !important;
+  top: 0px;
+  left: 0px;
+  background: #fff !important;
+  width: 40px;
+  .v-icon{
+    color: #666 !important;
+  }
+}
