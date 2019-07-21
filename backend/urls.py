@@ -15,6 +15,7 @@ from .api import views
 router = routers.DefaultRouter()
 router.register('reviews', views.ReviewViewSet)
 router.register('profiles', views.ProfileViewSet)
+router.register('hitups', views.HitupViewSet)
 
 urlpatterns = [
 

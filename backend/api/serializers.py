@@ -1,3 +1,5 @@
+import datetime
+
 from django.contrib.auth.models import User
 from rest_framework import serializers
 
@@ -7,7 +9,7 @@ from allauth.account.utils import send_email_confirmation, user_pk_to_url_str, s
 from allauth.account import app_settings as allauth_settings
 from allauth.utils import email_address_exists
 
-from .models import Review, Profile
+from .models import Review, Profile, Hitup
 
 
 class UserSerializer(serializers.ModelSerializer):
@@ -144,13 +146,42 @@ class ResendConfirmSerializer(serializers.Serializer):
         return email
 
 
-class ReviewSerializer(serializers.HyperlinkedModelSerializer):
+class ReviewSerializer(serializers.ModelSerializer):
     class Meta:
         model = Review
         fields = '__all__'
 
 
-class ProfileSerializer(serializers.HyperlinkedModelSerializer):
+class ProfileSerializer(serializers.ModelSerializer):
+    reviewees = ReviewSerializer(many=True)
+
     class Meta:
         model = Profile
         fields = '__all__'
+
+
+class HitupSerializer(serializers.ModelSerializer):
+    hanger = ProfileSerializer()
+
+    class Meta:
+        model = Hitup
+        fields = '__all__'
+
+class NewHitupSerializer(serializers.ModelSerializer):
+    hanger_id = serializers.IntegerField()
+
+    def create(self, validated_data):
+        hanger_profile=Profile.objects.get(pk=validated_data.get('hanger_id', None))
+        user=self.context['request'].user
+        expiration = datetime.datetime.now() + datetime.timedelta(minutes=30)
+        allow_review = datetime.datetime.now() + datetime.timedelta(hours=2)
+
+        instance=Hitup(hanger=hanger_profile, hangee=user.profile, 
+                              expiration=expiration, allow_review=allow_review)
+        instance.save()
+
+        return instance
+
+    class Meta:
+        model = Hitup
+        fields = ('hanger_id', )
