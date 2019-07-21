@@ -1,0 +1,27 @@
+@import '../../assets/styles/vars';
+
+.lolRadio{
+  border-radius: 100px;
+  height: 100px !important;
+  width: 100px !important;
+}
+.centerize{
+  padding: 20px;
+  .v-image{
+    float: right !important;
+
+  }
+}
+
+.v-card{
+    background-image: linear-gradient(to right,  rgb(255, 255, 255), rgb(248, 254, 255));
+}
+
+.bio{  
+  padding: 15px !important;
+  margin-top: -25px;
+}
+
+p, h1, h2, h3, i{
+  color: black !important;
+}
