@@ -2,14 +2,32 @@
 
 .lolRadio{
   border-radius: 100px;
-  height: 100px !important;
-  width: 100px !important;
+  height: 180px !important;
+  width: 180px !important;
 }
-.centerize{
-  padding: 20px;
-  .v-image{
-    float: right !important;
+.v-img{
+  margin: 0 auto !important;
+}
 
+.centerlize{
+  margin: 0 auto !important;
+  display: inline-block;
+}
+
+.centerText{
+  margin: 0 auto;
+  display: inline-block
+}
+
+
+.admired{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  p{
+    margin: 0 !important;
+    font-weight: bold;
+    margin-left: 9px !important;
   }
 }
 
@@ -19,9 +37,34 @@
 
 .bio{  
   padding: 15px !important;
-  margin-top: -25px;
+  
 }
 
 p, h1, h2, h3, i{
   color: black !important;
+}
+
+h3{
+  font-weight: normal !important;
+}
+
+body{
+  background-color: linear-gradient(to right,  rgb(255, 255, 255), rgb(248, 254, 255));
+}
+
+.emojes-bar{
+  display: flex;
+  justify-content: space-around;
+  padding: 5px 0 10px;
+  font-size: 17px;
+  margin-bottom: 15px;
+  span{
+    display: inline-block;
+    background: #f5f5f5;
+    border-radius: 50px;
+    font-weight: bold;
+    padding: 4px 12px;
+    font-size: 15px;
+    color: #4c4c4c;
+  }
 }
