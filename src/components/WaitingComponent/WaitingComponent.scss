@@ -1,7 +1,6 @@
 @import '../../assets/styles/vars';
 
 body{
-  background: #fff;
 }
 
 .hello-logo{
@@ -11,7 +10,7 @@ body{
   margin-bottom: 20px;
 }
 .container{
-  background: #fff;
+  background: #fff !important;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -20,10 +19,10 @@ body{
   padding: 0;
 }
 .v-btn{
-  background: $gradiant !important;
+  background: $cancel-gradiant !important;
   width: 80%;
   position: relative;
-  bottom: -140px !important;
+  bottom: -180px !important;
   height: 50px;
  
   font-size: 18px;
