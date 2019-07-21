@@ -1,0 +1,41 @@
+@import '../../assets/styles/vars';
+
+body{
+  background: #fff;
+}
+
+.hello-logo{
+  width: 300px;
+  height: 180px;
+  background: #fafafa;
+  margin-bottom: 20px;
+}
+.container{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 0;
+}
+.v-btn{
+  background: $gradiant !important;
+  width: 80%;
+  position: relative;
+  bottom: -140px !important;
+  height: 50px;
+ 
+  font-size: 18px;
+  @media(min-width: 600px) {
+    width: 250px;
+  }
+}
+
+.component-fade-enter-active, .component-fade-leave-active {
+  transition: .3s ease;
+}
+.component-fade-enter, .component-fade-leave-to {
+  opacity: 0;
+  transform: translateX(-80px);
+
+}

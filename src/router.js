@@ -3,25 +3,32 @@ import Router from 'vue-router'
 import HelloComponent from './components/HelloComponent/HelloComponent.vue'
 import HitupList from './components/HitupList/HitupList.vue'
 import ProfileComponent from './components/ProfileComponent/ProfileComponent.vue'
+import MainComponent from './components/MainComponent/MainComponent.vue'
 
 Vue.use(Router)
 
 export default new Router({
+  mode: 'history',
   routes: [
     {
       path: '/',
+      name: 'main',
+      component: MainComponent
+    },
+    {
+      path: '/welcome',
       name: 'hello',
       component: HelloComponent
     },
-    {
-      path: '/search',
-      name: 'HitupList',
-      component: HitupList
-    },
-    {
-      path: '/profile',
-      name: 'ProfileComponent',
-      component: ProfileComponent
-    }
+    // {
+    //   path: '/search',
+    //   name: 'HitupList',
+    //   component: HitupList
+    // },
+    // {
+    //   path: '/profile',
+    //   name: 'ProfileComponent',
+    //   component: ProfileComponent
+    // }
   ]
 })

@@ -41,10 +41,12 @@ export default {
             intelegance: 12
           }
         }
-      ],
-      methods: {
-       
-      }
+      ]
     }
+  },
+  methods: {
+    toProfile(){
+      this.$store.state.view = 'ProfileComponent'
+   }
   }
 }

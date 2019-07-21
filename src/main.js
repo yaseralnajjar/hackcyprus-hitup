@@ -9,10 +9,14 @@ Vue.config.productionTip = false
 import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css' 
 Vue.use(Vuetify)
+
+import store from './store/app.store'
+
 // Vue.use(VueRouter)
 
 const vue = new Vue({
   router,
+  store,
   render: h => h(App)
 })
 

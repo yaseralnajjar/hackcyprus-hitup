@@ -10,7 +10,8 @@
         color="deep-purple "
         flat
         value="nearby"
-        to="/search"
+        to="/"
+        active
       >
         <span>nearby</span>
         <v-icon>track_changes</v-icon>
@@ -21,6 +22,7 @@
         flat
         value="me"
         to="/profile"
+        
       >
         <span>Me</span>
         <v-icon>person</v-icon>

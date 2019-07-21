@@ -10,7 +10,7 @@
         <span>{{ HeadTitle }}</span>
         </div>
       <v-card flat class="card-item" v-for="user in users" :key="user.name">
-        <v-list-tile ripple avatar to="/profile">
+        <v-list-tile ripple avatar @click="toProfile">
           <v-list-tile-avatar>
             <img :src="user.avatar">
           </v-list-tile-avatar>
