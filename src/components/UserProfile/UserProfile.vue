@@ -17,7 +17,9 @@
               <div>
                 <h2 class="headline">Mohammed Alhakem</h2>
                 <h3>Admired by:<span style="font-weight: bold; margin: 0 0px 0 6px !important">28</span> people</h3>
-             
+             <div class="text-lg-center" style="margin: 15px 0;">
+              <v-btn round color="primary" dark large>Hit me up 🖐️</v-btn>
+            </div>
               </div>
                     </v-layout>
 
@@ -46,10 +48,7 @@
 
           </v-bio>
         </div>
-                <v-divider light></v-divider>
- <div class="text-lg-center" style="margin-top: 20%">
-      <v-btn round color="primary" dark large>Hit me up 🖐️</v-btn>
-    </div>
+    
 
         </v-card-actions>
       </v-card>

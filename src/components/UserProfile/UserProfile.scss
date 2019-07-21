@@ -19,7 +19,9 @@
   display: inline-block
 }
 
-
+.v-btn{
+  background-image: $gradiant !important; 
+}
 .admired{
   display: flex;
   align-items: center;
