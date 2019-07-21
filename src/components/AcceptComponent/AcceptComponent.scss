@@ -1,18 +1,22 @@
 @import '../../assets/styles/vars';
 
 body{
-  background: #fff;
 }
 
-.hello-logo{
+.illustration{
   width: 300px;
-  height: 180px;
-  background: #fafafa;
-  margin-bottom: 60px;
+  height: 200px;
+  margin-bottom: 20px;
+  font-size: 100px;
+  line-height: 100px;
   margin-top: 70px;
+  .illustration img{
+    width: 300px;
+    object-fit: contain;
+  }
 }
 .container{
-  background: #fff;
+  background: #fff !important;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -30,5 +34,15 @@ body{
   font-size: 18px;
   @media(min-width: 600px) {
     width: 250px;
+  }
+}
+.back-icon{
+  position: absolute !important;
+  top: 0px;
+  left: 0px;
+  background: #fff !important;
+  width: 40px;
+  .v-icon{
+    color: #666 !important;
   }
 }

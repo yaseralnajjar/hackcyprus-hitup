@@ -6,6 +6,9 @@
       <v-card flat>
         <v-toolbar color="white" flat>
           <!-- <v-toolbar-side-icon></v-toolbar-side-icon> -->
+          <!-- <v-btn icon fab class="back-icon" @click="goBack">
+            <v-icon>arrow_back_ios</v-icon>
+          </v-btn> -->
           <v-toolbar-title class="logo">HitUP</v-toolbar-title>
           <v-spacer></v-spacer>
           <v-btn icon class="notifications-icon" to="/notification">

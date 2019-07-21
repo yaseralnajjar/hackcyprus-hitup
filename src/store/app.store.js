@@ -6,6 +6,7 @@ Vue.use(Vuex)
 export default new Vuex.Store({
   state: {
     view: "HelloComponent"
+    // view: "WaitingComponent"
   },
   mutations: {
     // profile(state, payload) {

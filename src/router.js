@@ -5,6 +5,7 @@ import HitupList from './components/HitupList/HitupList.vue'
 import UserProfile from './components/UserProfile/UserProfile.vue'
 import MainComponent from './components/MainComponent/MainComponent.vue'
 import WaitingComponent from './components/WaitingComponent/WaitingComponent.vue'
+import AcceptComponent from './components/AcceptComponent/AcceptComponent.vue'
 
 Vue.use(Router)
 
@@ -21,15 +22,25 @@ export default new Router({
       name: 'hello',
       component: HelloComponent
     },
-    {
-      path: '/search',
-      name: 'HitupList',
-      component: HitupList
-    },
+    // {
+    //   path: '/wating',
+    //   name: 'hello',
+    //   component: WaitingComponent
+    // },
+    // {
+    //   path: '/search',
+    //   name: 'HitupList',
+    //   component: HitupList
+    // },
     {
       path: '/profile',
       name: 'UserProfile',
       component: UserProfile
+    },
+    {
+      path: '/accepted',
+      name: 'AcceptComponent',
+      component: AcceptComponent
     }
   ]
 })
