@@ -1,3 +1,9 @@
 export default {
-  name: 'HeaderComponent'
+  name: 'HeaderComponent',
+  data: () => ({
+    items: [
+      { title: 'Profile' },
+      { title: 'Logout' }
+    ]
+  })
 }

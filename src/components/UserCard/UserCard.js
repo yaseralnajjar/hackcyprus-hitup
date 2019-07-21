@@ -2,13 +2,15 @@ export default {
   name: 'UserCard',
   data () {
     return {
-      headerTitle: 'People near to you',
+      headerTitle: 'People near you',
+      HeadTitle: 'People near you, let\'s make Firends.',
       users: [
         {
           name: 'Mohammed Alhakem',
           email: 'alhakeem.prof@gmail.com',
-          rate: 5,
-          avatar: 'https://cdn.vuetifyjs.com/images/lists/2.jpg',
+          age: 15,
+          gender: 'male',
+          avatar: 'https://cdn.vuetifyjs.com/images/lists/1.jpg',
           personality: {
             friendly: 6,
             funny: 10,
@@ -18,7 +20,8 @@ export default {
         {
           name: 'Hassan Erbilen',
           email: 'hassen@gmail.com',
-          rate: 8,
+          age: 20,
+          gender: 'male',
           avatar: 'https://cdn.vuetifyjs.com/images/lists/2.jpg',
           personality: {
             friendly: 10,
@@ -29,7 +32,8 @@ export default {
         {
           name: 'Abdulrhaman Bekawi',
           email: 'Abdulrhaman@gmail.com',
-          rate: 20,
+          age: 25,
+          gender: 'female',
           avatar: 'https://cdn.vuetifyjs.com/images/lists/3.jpg',
           personality: {
             friendly: 25,
@@ -39,5 +43,10 @@ export default {
         }
       ]
     }
+  },
+  methods: {
+    toProfile(){
+      this.$store.state.view = 'ProfileComponent'
+   }
   }
 }

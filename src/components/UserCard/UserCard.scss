@@ -1,3 +1,56 @@
-.v-list__tile:not(:last-of-type){
-  border-bottom: 1px solid #ccc !important;
+@import '../../assets/styles/vars';
+
+.v-subheader{
+  border-bottom: 8px solid #fafafa !important;
+}
+.v-list__tile:last-of-type{
+  border-bottom: none;
+}
+.card-item{
+  border-bottom: 8px solid #fafafa !important;
+  &:last-of-type{
+    border-bottom: none !important;
+  }
+}
+.emojes-bar{
+  display: flex;
+  justify-content: space-around;
+  padding: 5px 0 10px;
+  font-size: 17px;
+  span{
+    display: inline-block;
+    background: #f5f5f5;
+    border-radius: 50px;
+    font-weight: bold;
+    padding: 4px 12px;
+    font-size: 15px;
+    color: #4c4c4c;
+  }
+}
+
+.people-count{
+  width: 90%;
+  background: $gradiant;
+  color: #fff;
+  margin: 5px auto 20px;
+  padding: 25px;
+  text-align: left;
+  border-radius: 14px;
+  box-shadow: 0 5px 10px rgba(#8b42e8,0.2);
+  font-size: 16px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  span{
+    display: block;
+    &:first-of-type{
+      font-size: 46px;
+      flex: 1;
+      padding: 0 20px 0 10px;
+    }
+    &:last-of-type{
+      flex: 6;
+    }
+  }
 }

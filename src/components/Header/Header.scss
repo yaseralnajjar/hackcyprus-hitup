@@ -1,0 +1,21 @@
+@import '../../assets/styles/vars';
+.v-avatar{
+  width: 32px !important;
+  height: 32px !important;
+}
+.v-btn{
+  margin-right: 0 !important;
+}
+.header-border{
+  height: 8px;
+  background: $gradiant;
+}
+.logo{
+  font-weight: bold;
+}
+.notifications-icon{
+  margin-right: -10px !important;
+  .v-icon{
+    color: #72727a !important;
+  }
+}

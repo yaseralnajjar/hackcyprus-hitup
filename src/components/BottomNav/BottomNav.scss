@@ -1,0 +1,16 @@
+@import '../../assets/styles/vars';
+.v-bottom-nav{
+  height: 45px !important;
+  .v-btn{
+    padding: 0 !important;
+    .v-icon{
+      // font-size: 22px;
+    }
+    .v-btn__content{
+      span{
+        font-size: 10px !important;
+      }
+    }
+  }
+  
+}
